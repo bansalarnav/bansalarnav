@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
+import { Quando } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-
-const sentient = localFont({
-  variable: "--font-sentient",
-  src: "../../public/fonts/sentient/variable.ttf",
-});
 
 const switzer = localFont({
   variable: "--font-switzer",
   src: "../../public/fonts/switzer/variable.ttf",
 });
 
+const quando = Quando({
+  variable: "--font-quando",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: "Arnav Bansal",
-  description: "Hello World!",
+  description: "Computer Science Student @ UIUC",
 };
 
 export default function RootLayout({
@@ -25,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${switzer.variable} ${sentient.variable} ${switzer.className}  antialiased`}
+        className={`${switzer.variable} ${switzer.className} ${quando.variable} antialiased relative`}
       >
         {children}
       </body>
