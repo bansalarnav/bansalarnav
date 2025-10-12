@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 interface HoverLinkProps {
@@ -6,19 +8,36 @@ interface HoverLinkProps {
   color?: string;
   href: string;
 }
+
 export const HoverLink = ({
   className,
   children,
   color = "#000000",
   href,
 }: HoverLinkProps) => {
+  const uniqueId = `hover-link-${Math.random().toString(36).substr(2, 9)}`;
+
   return (
-    <Link href={href} target="_blank" className="relative group">
-      <span className={`${className} z-10`}>{children}</span>
-      <span
-        className={`absolute bottom-0 left-[-1px] w-[calc(100%+2px)] h-[35%] z-[1] group-hover:h-[100%] transition-all duration-200`}
-        style={{ backgroundColor: color, opacity: 0.2 }}
-      />
-    </Link>
+    <>
+      <style>{`
+        .${uniqueId} {
+          background: linear-gradient(to top, ${color}66 0%, ${color}66 100%);
+          background-size: 100% 45%;
+          background-repeat: no-repeat;
+          background-position: bottom;
+          transition: background-size 200ms ease;
+        }
+        .${uniqueId}:hover {
+          background-size: 100% 100%;
+        }
+      `}</style>
+      <Link
+        href={href}
+        target="_blank"
+        className={`${uniqueId} ${className || ""}`}
+      >
+        {children}
+      </Link>
+    </>
   );
 };

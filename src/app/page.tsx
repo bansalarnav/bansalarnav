@@ -1,4 +1,6 @@
 import { HoverLink } from "@/components/hoverlink";
+import { RecentMovies } from "@/components/movies";
+import { NowPlaying } from "@/components/nowplaying";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +18,7 @@ export default function Home() {
           borderImageSlice: "1",
         }}
       >
-        <div className="w-[40vw] h-[15vh] mx-auto flex items-center justify-end pr-[30px]">
+        <div className="w-[672px] h-[15vh] mx-auto flex items-center justify-end pr-[30px]">
           <Link
             href="/guestbook"
             className="font-[500] cursor-alias flex items-center gap-[5px]"
@@ -26,7 +28,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="w-[40vw] min-h-[100vh] mx-auto border-x-2 border-[#f5f5f5] border-dashed pt-[15vh]"
+        className="w-[672px] min-h-[100vh] mx-auto border-x-2 border-[#f5f5f5] border-dashed pt-[15vh]"
         style={{
           borderLeftStyle: "dashed",
           borderRightStyle: "dashed",
@@ -48,7 +50,7 @@ export default function Home() {
             a.k.a tperm
           </span>
         </div>
-        <p className="text-[#474747] text-[17px] mt-[10px]">
+        <p className="text-[#474747] text-[17px] mt-[8px]">
           I'm a student at the{" "}
           <HoverLink
             href="https://cs.illinois.edu"
@@ -57,9 +59,15 @@ export default function Home() {
           >
             University of Illinois, Urbana-Champaign
           </HoverLink>
-          , studying <span className="font-[500]">Computer Science</span>. I
-          especially enjoy all things tech but also love learning random tidbits
-          about basically everything (did you know we're all fish?).
+          , where I'm studying{" "}
+          <span className="font-[500]">Computer Science</span>. I especially
+          enjoy all things tech but also love learning random tidbits about
+          basically everything (did you know we're all fish?).
+        </p>
+
+        <p className="text-[#474747] text-[17px] mt-[12px]">
+          When I'm free I love listening to music <NowPlaying /> or watching
+          movies. Some movies I've watched recently include <RecentMovies />
         </p>
       </div>
     </>
