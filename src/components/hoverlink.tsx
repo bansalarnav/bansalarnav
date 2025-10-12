@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 interface HoverLinkProps {
@@ -21,7 +19,7 @@ export const HoverLink = ({
     <>
       <style>{`
         .${uniqueId} {
-          background: linear-gradient(to top, ${color}66 0%, ${color}66 100%);
+          background: linear-gradient(to top, ${color}40 0%, ${color}40 100%);
           background-size: 100% 45%;
           background-repeat: no-repeat;
           background-position: bottom;

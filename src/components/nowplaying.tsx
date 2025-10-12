@@ -38,7 +38,10 @@ export const NowPlaying = async ({ className }: NowPlayingProps) => {
   return (
     <span className={className}>
       (currently listening to{" "}
-      <HoverLink href="">
+      <HoverLink
+        href={currentlyPlaying.item.external_urls.spotify}
+        color="#1DB954"
+      >
         <span className="font-[500]">{currentlyPlaying.item.name}</span>
       </HoverLink>{" "}
       by{" "}
