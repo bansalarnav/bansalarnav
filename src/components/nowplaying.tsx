@@ -1,12 +1,14 @@
 import { SpotifyApi } from "@spotify/web-api-ts-sdk";
 import querystring from "node:querystring";
 import { HoverLink } from "./hoverlink";
+import { headers } from "next/headers";
 
 interface NowPlayingProps {
   className?: string;
 }
 
 export const NowPlaying = async ({ className }: NowPlayingProps) => {
+  headers();
   const clientId = process.env.SPOTIFY_CLIENT_ID;
   const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
   const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
