@@ -62,7 +62,7 @@ export default function Home() {
           , where I'm studying{" "}
           <span className="font-[500]">Computer Science</span>. I especially
           enjoy all things tech but also love learning random tidbits about
-          basically everything (did you know we're all fish?).
+          basically everything (btw, you're a fish).
         </p>
 
         <p className="text-[#474747] text-[17px] mt-[12px]">

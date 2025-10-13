@@ -31,6 +31,8 @@ export const NowPlaying = async ({ className }: NowPlayingProps) => {
   const sdk = SpotifyApi.withAccessToken(clientId as string, response);
   const currentlyPlaying = await sdk.player.getCurrentlyPlayingTrack();
 
+  console.log(currentlyPlaying.item?.name);
+
   if (currentlyPlaying === null || currentlyPlaying.item === null) {
     return null;
   }
