@@ -1,6 +1,8 @@
 import RSSParser from "rss-parser";
+import { headers } from "next/headers";
 
 export const RecentMovies = async ({ className }: { className?: string }) => {
+  headers();
   const parser = new RSSParser();
   const feed = await parser.parseURL("https://letterboxd.com/tperm/rss/");
 
