@@ -1,7 +1,7 @@
-import { SpotifyApi } from "@spotify/web-api-ts-sdk";
 import querystring from "node:querystring";
-import { HoverLink } from "./hoverlink";
+import { SpotifyApi } from "@spotify/web-api-ts-sdk";
 import { headers } from "next/headers";
+import { HoverLink } from "./hoverlink";
 
 interface NowPlayingProps {
   className?: string;
@@ -32,8 +32,6 @@ export const NowPlaying = async ({ className }: NowPlayingProps) => {
 
   const sdk = SpotifyApi.withAccessToken(clientId as string, response);
   const currentlyPlaying = await sdk.player.getCurrentlyPlayingTrack();
-
-  console.log(currentlyPlaying.item?.name);
 
   if (currentlyPlaying === null || currentlyPlaying.item === null) {
     return null;
