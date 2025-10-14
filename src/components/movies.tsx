@@ -1,5 +1,5 @@
-import RSSParser from "rss-parser";
 import { headers } from "next/headers";
+import RSSParser from "rss-parser";
 
 export const RecentMovies = async ({ className }: { className?: string }) => {
   headers();
