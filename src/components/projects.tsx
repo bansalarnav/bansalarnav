@@ -34,7 +34,7 @@ export const Projects = () => {
       year: 2022,
       description: "App to find COVID-19 vaccination slots in India",
       builtWith: "Flutter, React, Express",
-      color: "#E69EFE",
+      color: "#64D762",
       link: "https://github.com/chiragbhansali/smart-jab-mobile",
     },
   ];
@@ -70,7 +70,7 @@ const ProjectCard = ({
   return (
     <div
       className={`border-l-[4px] sm:border-l-[6px] my-[12px] sm:my-[16px] py-[2px] px-[8px] sm:px-[12px] text-[14px] sm:text-[16px]`}
-      style={{ borderColor: color }}
+      style={{ borderColor: `${color}60` }}
     >
       <div className="flex justify-between items-center flex-wrap gap-[4px]">
         <Link href={link} target="_blank" rel="noopener noreferrer">

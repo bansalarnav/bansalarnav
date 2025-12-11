@@ -129,13 +129,13 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[20px]">
+          <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[28px]">
             Projects
           </h3>
           <Projects />
         </div>
         <div>
-          <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[20px]">
+          <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[28px]">
             Contact Me
           </h3>
           <div className="text-[#474747] text-[15px] sm:text-[17px] mt-[4px]">
