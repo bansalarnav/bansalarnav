@@ -21,6 +21,15 @@ export const Projects = () => {
       link: "https://canvas.arnav.fish",
     },
     {
+      name: "Datburnt",
+      year: 2023,
+      description:
+        "A multiplayer game where players battle it out by roasting images of famous personalities.",
+      builtWith: "Next.js, Tailwind, Express, SocketIO, MongoDB",
+      color: "#FB6A6A",
+      link: "https://github.com/DS-Infinity/datburnt/",
+    },
+    {
       name: "Smart Jab",
       year: 2022,
       description: "App to find COVID-19 vaccination slots in India",
