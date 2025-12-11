@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div
-        className="w-[100vw] h-[15vh] z-10 absolute left-0 top-0 border-b-0 border-[#f5f5f5] border-dashed"
+        className="w-[100vw] h-[15vh] z-10 absolute left-0 top-0 border-b-0 border-[#f5f5f5] border-dashed hidden md:block"
         style={{
           borderLeftStyle: "dashed",
           borderRightStyle: "dashed",
@@ -29,7 +29,7 @@ export default function Home() {
         {/* </div> */}
       </div>
       <div
-        className="w-[672px] min-h-[100vh] mx-auto border-x-0 border-[#f5f5f5] border-dashed pt-[8vh]"
+        className="w-full max-w-[672px] min-h-[100vh] mx-auto pt-[8vh] px-[20px] sm:px-[30px] md:px-0 md:border-x-0 md:border-[#f5f5f5] md:border-dashed"
         style={{
           borderLeftStyle: "dashed",
           borderRightStyle: "dashed",
@@ -43,15 +43,17 @@ export default function Home() {
           alt="Me"
           width={80}
           height={80}
-          className="rounded-[10px]"
+          className="rounded-[10px] w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"
         />
-        <div className="mt-[20px]">
-          <span className="text-[34px] m-0 font-[quando]">Hi, I'm Arnav</span>
-          <span className="ml-[20px] text-[#767676] font-[quando] text-[18px]">
+        <div className="mt-[20px] flex flex-col sm:flex-row sm:items-baseline gap-[4px] sm:gap-0">
+          <span className="text-[28px] sm:text-[34px] m-0 font-[quando]">
+            Hi, I'm Arnav
+          </span>
+          <span className="sm:ml-[20px] text-[#767676] font-[quando] text-[16px] sm:text-[18px]">
             a.k.a tperm
           </span>
         </div>
-        <p className="text-[#474747] text-[17px] mt-[8px]">
+        <p className="text-[#474747] text-[15px] sm:text-[17px] mt-[8px]">
           I'm a student at the{" "}
           <HoverLink
             href="https://cs.illinois.edu"
@@ -66,15 +68,15 @@ export default function Home() {
           basically everything (btw, you're a fish).
         </p>
 
-        <p className="text-[#474747] text-[17px] mt-[12px]">
+        <p className="text-[#474747] text-[15px] sm:text-[17px] mt-[12px]">
           When I'm free I love listening to music <NowPlaying /> or watching
           movies. Some movies I've watched recently include <RecentMovies />
         </p>
         <div>
-          <h3 className="font-[quando] m-[0] text-[#000] text-[22px] mt-[28px]">
+          <h3 className="font-[quando] m-[0] text-[#000] text-[20px] sm:text-[22px] mt-[28px]">
             Stack
           </h3>
-          <div className="text-[#474747] text-[17px] mt-[4px]">
+          <div className="text-[#474747] text-[15px] sm:text-[17px] mt-[4px]">
             I mostly live in the{" "}
             <HoverLink color="#4577C0" href="">
               TypeScript
@@ -117,25 +119,25 @@ export default function Home() {
             Python.
             <p className="h-[8px]" /> I also like to tinker around with Arduinos
             and ESP32s when I'm free.
-            <p className="mt-[12px] italic font-[quando] text-[15px]">
+            <p className="mt-[12px] italic font-[quando] text-[14px] sm:text-[15px]">
               tl;dr - If it involves code, I'm probably into it
             </p>
           </div>
         </div>
         <div>
-          <h3 className="font-[quando]  text-[#000] text-[22px] mt-[20px]">
+          <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[20px]">
             Projects
           </h3>
           <Projects />
         </div>
         <div>
-          <h3 className="font-[quando]  text-[#000] text-[22px] mt-[20px]">
+          <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[20px]">
             Contact Me
           </h3>
-          <div className="text-[#474747] text-[17px] mt-[4px]">
+          <div className="text-[#474747] text-[15px] sm:text-[17px] mt-[4px]">
             You can find me at practically every platform online, but here are
             some of my favourites:
-            <ul className="list-disc mt-[8px] ml-[40px]">
+            <ul className="list-disc mt-[8px] ml-[24px] sm:ml-[40px]">
               <li>
                 <HoverLink
                   href="mailto:arnavbansal101@gmail.com"
@@ -188,7 +190,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="h-[10vh] flex justify-between items-center mt-[40px] border-t-1 border-[#00000020]">
+        <div className="h-[10vh] flex flex-col sm:flex-row gap-[8px] sm:gap-0 justify-between items-center mt-[40px] border-t-1 border-[#00000020] text-[14px] sm:text-[16px]">
           <span>Resume</span>
           <span>© 2025 Arnav Bansal</span>
         </div>
