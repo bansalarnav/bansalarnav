@@ -1,5 +1,6 @@
 import { HoverLink } from "@/components/hoverlink";
 import { NowPlaying } from "@/components/nowplaying";
+import { Projects } from "@/components/projects";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -123,10 +124,7 @@ export default function Home() {
           <h3 className="font-[quando]  text-[#000] text-[22px] mt-[20px]">
             Projects
           </h3>
-          <p className="text-[#474747] text-[17px] mt-[6px]">
-            {/* I work mostly with <span>TypeScript</span> */}
-            Some text blah blah blah blah
-          </p>
+          <Projects />
         </div>
         <div>
           <h3 className="font-[quando]  text-[#000] text-[22px] mt-[20px]">
@@ -141,6 +139,7 @@ export default function Home() {
                   href="mailto:arnavbansal101@gmail.com"
                   color="#EA4335"
                   opacity="30"
+                  className="font-normal"
                 >
                   email:{" "}
                   <span className="font-medium">arnavbansal101@gmail.com</span>
@@ -151,28 +150,36 @@ export default function Home() {
                   href="https://github.com/bansalarnav"
                   color="#333333"
                   opacity="30"
+                  className="font-normal"
                 >
-                  github: <span className="font-medium">@bansalarnav</span>
+                  github: <span className="font-medium">bansalarnav</span>
                 </HoverLink>
               </li>
               <li>
-                <HoverLink href="https://x.com/arnvbnsl" color="#1DA1F2">
-                  x/twitter: <span className="font-medium">@arnvbnsl</span>
+                <HoverLink
+                  href="https://x.com/arnvbnsl"
+                  color="#1DA1F2"
+                  className="font-normal"
+                >
+                  {" "}
+                  x/twitter: <span className="font-medium">arnvbnsl</span>
                 </HoverLink>
               </li>
               <li>
                 <HoverLink
                   href="https://discord.com/users/bansalarnav"
                   color="#5865F2"
+                  className="font-normal"
                 >
-                  discord: <span className="font-medium">@bansalarnav</span>
+                  discord: <span className="font-medium">bansalarnav</span>
                 </HoverLink>
               </li>
             </ul>
           </div>
         </div>
-        <div className="h-[10vh] flex justify-center items-center mt-[40px] border-t-1 border-[#00000020]">
-          footer
+        <div className="h-[10vh] flex justify-between items-center mt-[40px] border-t-1 border-[#00000020]">
+          <span>Resume</span>
+          <span>© 2025 Arnav Bansal</span>
         </div>
       </div>
     </>

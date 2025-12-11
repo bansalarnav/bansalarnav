@@ -34,7 +34,7 @@ export const HoverLink = ({
       <Link
         href={href}
         target="_blank"
-        className={`${uniqueId} ${className || ""}`}
+        className={`${uniqueId} font-medium ${className || ""}`}
       >
         {children}
       </Link>
