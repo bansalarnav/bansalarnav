@@ -2,9 +2,8 @@ import { HoverLink } from "@/components/hoverlink";
 import { RecentMovies } from "@/components/movies";
 import { NowPlaying } from "@/components/nowplaying";
 import { Projects } from "@/components/projects";
-import { ExternalLink } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -45,11 +44,11 @@ export default function Home() {
           height={80}
           className="rounded-[10px] w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"
         />
-        <div className="mt-[20px] flex flex-col sm:flex-row sm:items-baseline gap-[4px] sm:gap-0">
+        <div className="mt-[20px]">
           <span className="text-[28px] sm:text-[34px] m-0 font-[quando]">
             Hi, I'm Arnav
           </span>
-          <span className="sm:ml-[20px] text-[#767676] font-[quando] text-[16px] sm:text-[18px]">
+          <span className="ml-[20px] text-[#767676] font-[quando] text-[18px] hidden sm:inline">
             a.k.a tperm
           </span>
         </div>
@@ -190,8 +189,10 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="h-[10vh] flex flex-col sm:flex-row gap-[8px] sm:gap-0 justify-between items-center mt-[40px] border-t-1 border-[#00000020] text-[14px] sm:text-[16px]">
-          <span>Resume</span>
+        <div className="min-h-[10vh] flex flex-row justify-between items-center mt-[40px] py-[20px] border-t-1 border-[#00000020] text-[14px] sm:text-[16px]">
+          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <span className="hover:underline cursor-pointer">Resume</span>
+          </Link>
           <span>© 2025 Arnav Bansal</span>
         </div>
       </div>
