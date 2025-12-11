@@ -77,41 +77,46 @@ export default function Home() {
           </h3>
           <div className="text-[#474747] text-[15px] sm:text-[17px] mt-[4px]">
             I mostly live in the{" "}
-            <HoverLink color="#4577C0" href="">
+            <HoverLink color="#4577C0" href="https://typescript.com">
               TypeScript
             </HoverLink>{" "}
             ecosystem, building full-stack apps with{" "}
-            <HoverLink color="#58C4DC" href="">
+            <HoverLink color="#58C4DC" href="https://react.dev/">
               React
             </HoverLink>
             ,{" "}
-            <HoverLink color="#4F4F4F" href="">
+            <HoverLink color="#4F4F4F" href="https://nextjs.org/">
               Next.js
             </HoverLink>
             , and{" "}
-            <HoverLink color="#F472B6" href="">
+            <HoverLink color="#F472B6" href="https://bun.sh/">
               Bun
             </HoverLink>{" "}
             (lately I’ve been enjoying{" "}
-            <HoverLink color="#E34798" href="">
+            <HoverLink color="#E34798" href="https://elysiajs.com/">
               Elysia
             </HoverLink>{" "}
             with{" "}
-            <HoverLink color="#CEF66C" opacity="90" href="">
+            <HoverLink
+              color="#CEF66C"
+              opacity="90"
+              href="https://orm.drizzle.team"
+            >
               Drizzle
             </HoverLink>
             ).
             <p className="h-[8px]" />I maintain a soft spot for systems
-            programming with <HoverLink href="">C++</HoverLink> and{" "}
-            <HoverLink color="#EBA842" opacity="80" href="">
+            programming with{" "}
+            <HoverLink href="https://cplusplus.com">C++</HoverLink> and{" "}
+            <HoverLink color="#EBA842" opacity="80" href="https://ziglang.org/">
               Zig
             </HoverLink>
             , and occasionally build mobile apps with{" "}
-            <HoverLink color="#2D67D0" href="">
+            <HoverLink color="#2D67D0" href="https://flutter.dev/">
               Flutter
             </HoverLink>{" "}
             or{" "}
-            <HoverLink color="#58C4DC" href="">
+            <HoverLink color="#58C4DC" href="https://reactnative.dev/">
               React Native
             </HoverLink>
             . I recently started digging deeper into Data Science and AI/ML with

@@ -24,7 +24,7 @@ export const Projects = () => {
       name: "Datburnt",
       year: 2023,
       description:
-        "A multiplayer game where players battle it out by roasting images of famous personalities.",
+        "A multiplayer game where players battle it out by roasting funny images",
       builtWith: "Next.js, Tailwind, Express, SocketIO, MongoDB",
       color: "#FB6A6A",
       link: "https://github.com/DS-Infinity/datburnt/",
@@ -81,7 +81,7 @@ const ProjectCard = ({
         </Link>
         <p className="text-[14px] sm:text-[16px] italic">{year}</p>
       </div>
-      <p className="text-[14px] sm:text-[16px]">{description}</p>
+      <p className="text-[14px] sm:text-[16px] mr-[6px]">{description}</p>
       <div className="text-[13px] sm:text-[15px] mt-[4px]">
         Built with: {builtWith}
       </div>
