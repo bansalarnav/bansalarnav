@@ -1,8 +1,8 @@
+import Image from "next/image";
+import Link from "next/link";
 import { HoverLink } from "@/components/hoverlink";
 import { NowPlaying } from "@/components/nowplaying";
 import { Projects } from "@/components/projects";
-import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -27,12 +27,12 @@ export default function Home() {
         {/* </div> */}
       </div>
       <div
-        className="w-full max-w-[672px] min-h-[100vh] mx-auto pt-[8vh] px-[20px] sm:px-[30px] md:px-0 md:border-x-0 md:border-[#f5f5f5] md:border-dashed"
+        className="w-full max-w-[672px] min-h-[100vh] mx-auto pt-[8vh] px-[20px] sm:px-[30px] md:px-0 md:border-x-0 md:border-[#000000ff] md:border-dashed"
         style={{
           borderLeftStyle: "dashed",
           borderRightStyle: "dashed",
           borderImageSource:
-            "repeating-linear-gradient(to bottom, #f5f5f5 0, #f5f5f5 10px, transparent 10px, transparent 20px)",
+            "repeating-linear-gradient(to bottom, #00000020 0, #00000020 10px, transparent 10px, transparent 20px)",
           borderImageSlice: "1",
         }}
       >
