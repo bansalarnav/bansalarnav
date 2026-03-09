@@ -70,6 +70,12 @@ export default function Home() {
           When I'm free I love listening to music <NowPlaying />.
         </p>
         <div>
+          <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[28px]">
+            Projects
+          </h3>
+          <Projects />
+        </div>
+        <div>
           <h3 className="font-[quando] m-[0] text-[#000] text-[20px] sm:text-[22px] mt-[28px]">
             Stack
           </h3>
@@ -90,7 +96,7 @@ export default function Home() {
             <HoverLink color="#F472B6" href="https://bun.sh/">
               Bun
             </HoverLink>{" "}
-            (lately I’ve been enjoying{" "}
+            (lately I've been enjoying{" "}
             <HoverLink color="#E34798" href="https://elysiajs.com/">
               Elysia
             </HoverLink>{" "}
@@ -125,12 +131,6 @@ export default function Home() {
               tl;dr - If it involves code, I'm probably into it
             </p>
           </div>
-        </div>
-        <div>
-          <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[28px]">
-            Projects
-          </h3>
-          <Projects />
         </div>
         <div>
           <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[28px]">
