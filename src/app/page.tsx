@@ -47,9 +47,6 @@ export default function Home() {
           <span className="text-[28px] sm:text-[34px] m-0 font-[quando]">
             Hi, I'm Arnav
           </span>
-          <span className="ml-[20px] text-[#767676] font-[quando] text-[18px] hidden sm:inline">
-            
-          </span>
         </div>
         <p className="text-[#474747] text-[15px] sm:text-[17px] mt-[8px]">
           I'm a student at the{" "}
