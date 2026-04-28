@@ -170,11 +170,11 @@ export default function Home() {
               </li>
               <li>
                 <HoverLink
-                  href="https://discord.com/users/bansalarnav"
+                  href="https://discord.com/users/arnav.bansal"
                   color="#5865F2"
                   className="font-normal"
                 >
-                  discord: <span className="font-medium">bansalarnav</span>
+                  discord: <span className="font-medium">arnav.bansal</span>
                 </HoverLink>
               </li>
             </ul>
