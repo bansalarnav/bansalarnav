@@ -17,6 +17,7 @@ const quando = Quando({
 export const metadata: Metadata = {
   title: "Arnav Bansal",
   description: "Computer Science Student @ UIUC",
+  robots: "noindex",
 };
 
 export default function RootLayout({
