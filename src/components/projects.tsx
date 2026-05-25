@@ -13,10 +13,10 @@ export const Projects = () => {
       link: "",
     },
     {
-      name: "Aethon",
+      name: "Railyard",
       year: 2026,
       description:
-        "Vercel-like developer experience for deploying and managing apps on your own VPS.",
+        "Railway like developer experience for deploying and managing apps on your own VPS.",
       builtWith: "",
       color: "#F59E0B",
       link: "",
