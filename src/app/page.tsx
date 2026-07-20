@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HoverLink } from "@/components/hoverlink";
-import { NowPlaying } from "@/components/nowplaying";
 import { Projects } from "@/components/projects";
 
 export default function Home() {
@@ -64,7 +63,7 @@ export default function Home() {
         </p>
 
         <p className="text-[#474747] text-[15px] sm:text-[17px] mt-[12px]">
-          When I'm free I love listening to music <NowPlaying />.
+          When I'm free I love listening to music.
         </p>
         <div>
           <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[28px]">
