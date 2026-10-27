@@ -1,6 +1,6 @@
 import { unstable_cache } from "next/cache";
 import Parser from "rss-parser";
-import { extractAccentColor } from "./accent-color";
+import { pickAccents } from "./movie-accents";
 import { MovieLink } from "./movielink";
 
 const LETTERBOXD_USERNAME = "tperm";
@@ -47,18 +47,14 @@ const getMovies = unstable_cache(
       `https://letterboxd.com/${LETTERBOXD_USERNAME}/rss/`,
     );
     const items = feed.items.slice(0, count);
+    const accents = pickAccents(items.length);
 
-    return Promise.all(
-      items.map(async (item) => {
-        const poster = extractPoster(item);
-        return {
-          href: item.link ?? "#",
-          name: item.filmTitle ?? item.title ?? "a film",
-          poster,
-          accent: poster ? await extractAccentColor(poster) : undefined,
-        };
-      }),
-    );
+    return items.map((item, index) => ({
+      href: item.link ?? "#",
+      name: item.filmTitle ?? item.title ?? "a film",
+      poster: extractPoster(item),
+      accent: accents[index],
+    }));
   },
   ["letterboxd-latest-movies"],
   { revalidate: 3600, tags: ["letterboxd"] },
