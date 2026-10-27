@@ -6,6 +6,9 @@ interface HoverLinkProps {
   color?: string;
   opacity?: string;
   href: string;
+  onMouseEnter?: (event: React.MouseEvent) => void;
+  onMouseMove?: (event: React.MouseEvent) => void;
+  onMouseLeave?: () => void;
 }
 
 export const HoverLink = ({
@@ -14,6 +17,9 @@ export const HoverLink = ({
   color = "#000000",
   opacity = "40",
   href,
+  onMouseEnter,
+  onMouseMove,
+  onMouseLeave,
 }: HoverLinkProps) => {
   const uniqueId = `hover-link-${Math.random().toString(36).substr(2, 9)}`;
 
@@ -35,6 +41,9 @@ export const HoverLink = ({
         href={href}
         target="_blank"
         className={`${uniqueId} font-medium ${className || ""}`}
+        onMouseEnter={onMouseEnter}
+        onMouseMove={onMouseMove}
+        onMouseLeave={onMouseLeave}
       >
         {children}
       </Link>

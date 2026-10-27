@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HoverLink } from "@/components/hoverlink";
+import { LatestMovies } from "@/components/latestmovies";
+import { NowPlaying } from "@/components/nowplaying";
 import { Projects } from "@/components/projects";
+
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
@@ -63,8 +67,12 @@ export default function Home() {
         </p>
 
         <p className="text-[#474747] text-[15px] sm:text-[17px] mt-[12px]">
-          When I'm free I love listening to music.
+          When I'm free I love listening to music and watching movies.
         </p>
+        <div className="text-[#777] text-[14px] sm:text-[15px] mt-[6px] flex flex-col gap-[2px]">
+          <NowPlaying />
+          <LatestMovies />
+        </div>
         <div>
           <h3 className="font-[quando]  text-[#000] text-[20px] sm:text-[22px] mt-[28px]">
             Projects
@@ -165,6 +173,15 @@ export default function Home() {
                 >
                   {" "}
                   x/twitter: <span className="font-medium">arnvbnsl</span>
+                </HoverLink>
+              </li>
+              <li>
+                <HoverLink
+                  href="https://letterboxd.com/tperm"
+                  color="#00E054"
+                  className="font-normal"
+                >
+                  letterboxd: <span className="font-medium">tperm</span>
                 </HoverLink>
               </li>
               <li>
